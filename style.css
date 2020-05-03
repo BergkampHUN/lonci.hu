@@ -206,6 +206,7 @@ a p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
+    display: block;
 }
 
 @media screen and (max-width: 960px){
