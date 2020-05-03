@@ -1,47 +1,68 @@
-body {
-    background-color: #f69781;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-    font-family: 'Crimson Pro', serif;
-    font-weight: 300;
+html,body {
     margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url("images/pure_quartz.jpg");
+    max-width: 1920px;
+    height: auto;
+    background-position: center center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+}
+ .container {
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header .container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
 }
 .logo {
-    margin: 0 42px 0 0;
-    width: 492px;
-}
-.name {
-    margin: 35px 0 50px 0;
-    font-size: 28px;
-    font-weight: 300;
-    line-height: normal;
-}
-.coming-soon {
-    font-size: 20px;
-    margin: 0;
-    line-height: normal;
+    max-width: 350px;
+    width: 90%;
+    display: block;
+    margin-top: 80px;
+    padding-right: 22px;
+    box-sizing: border-box;
 
 }
-.coming-soon a {
+h1 {
+    font-family: 'Lora', serif; 500;
     color: white;
-    text-decoration: none;
-    font-style: italic;
+    size: 36px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+header p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+p {
+    color: white;
+    text-align: left;
+    font-family: 'Lora', serif; 500;
+    font-size: 18px;
+    line-height: 25px;
 }
 .social-icons {
+    max-width: 960px;
+    position: absolute;
+    right: 0;
+    bottom: 80px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 37px;
 }
 .social-icons a {
-    background-color: white;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +71,227 @@ body {
     margin: 0 12px;
 }
 .social-icons a i {
-    color: #f69781;
-    font-size: 40px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}
+section.bio {
+    max-width: 1920px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.biotext {
+    background: #F6978F;
+    margin-left: auto;
+    width: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bio div.container {
+    display: flex;
+}
+.first{
+    width: 100%;
+    height: 100%;
+    object-position: right center;
+    object-fit: cover;
+
+}
+.first-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(50% + 200px);
+    bottom: 0;
+    z-index: -1;
+}
+section.turmalin {
+    background: #E2E2E0;
+    margin: 100px 0;
+}
+.turmalin .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+img.turmalin-sett {
+    height: 100°;
+    max-width: 100%;
+}
+div.turmalin-container {
+    flex: 0 0 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+div.turmalin-text{
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 50px 50px 50px 0px;
+}
+div.turmalin-text h1 {
+    color: black
+}
+div.turmalin-text p {
+    color: black
+}
+p.contact {
+    color: black;
+}
+section.album.container {
+    display: flex;
+    align-items: flex-start;
+}
+div.first-column {
+    flex: 0 0 50%;
+    flex-grow: 1;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+div.second-column {
+    flex: 0 0 50%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+section.album.container img {
+    width: 100%;
+}
+
+div.second-column img {
+    margin-bottom: 80px;
+    display: block;
+}
+div.contact-icons p {
+    color:black;
+}
+div.contact-icons svg {
+    fill: black;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 0;
+
+}
+div.contact-icons a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    margin: none;
+}
+a:hover {
+   color:  #00999E;
+}
+p.contact {
+    margin: 50px 30px;
+}
+div.contact-icons {
+    margin: 0 0 0 30px;
+}
+a p {
+    margin: 10px 0;
+}
+.footer {
+    max-width: 1920px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 960px){
+    div.turmalin-text {
+        padding: 50px 50px 50px 50px;
+    }
+    img.footer {
+        display: none;
+    }
+    .second-column img:last-child {
+        margin-bottom: 0;
+    }
+    body p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .social-icons {
+        left: 0;
+        bottom: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icons a{
+        margin: 0 5px;
+    }
+    section.bio {
+        margin-top: 30px;
+    }
+    .first-img {
+        position: static;
+        width: 100%;
+        margin-bottom: 0;
+    }  
+    .first-img img {
+        display: block;
+    }
+    .biotext {
+        width: 100%;
+        padding: 50px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    div.turmalin-container {
+        flex: 0 0 100%;
+
+    }
+    div.turmalin-text{
+        flex: 0 0 100%;
+    }
+    section.album.container {
+        flex-wrap: wrap;
+    }
+    div.first-column {
+        flex: 0 0 100%;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    div.second-column {
+        flex: 0 0 100%;
+        padding-left: 0px;
+    }
+    section.turmalin {
+        margin: 0 0 30px;
+    }
+    p.contact {
+        margin: 30px 30px;
+    }
+    div.second-column img {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    body p {
+        font-size: 14px;
+    }
+    div.contact-icons svg {
+        fill: black;
+        width: 20px;
+        height: 20px;
+        margin: 0 15px 0 0;
+    }
+    div.contact-icons {
+        margin: 30px 0 30px 30px;
+    }
 }

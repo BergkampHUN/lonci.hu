@@ -1,0 +1,55 @@
+body {
+    background-color: #f69781;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 300;
+    margin: 0;
+}
+.logo {
+    margin: 0 42px 0 0;
+    width: 492px;
+}
+.name {
+    margin: 35px 0 50px 0;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+}
+.coming-soon {
+    font-size: 20px;
+    margin: 0;
+    line-height: normal;
+
+}
+.coming-soon a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+}
+.social-icons a {
+    background-color: white;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 12px;
+}
+.social-icons a i {
+    color: #f69781;
+    font-size: 40px;
+}
